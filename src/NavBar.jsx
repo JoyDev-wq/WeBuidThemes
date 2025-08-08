@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <div className='flex justify-between items-center border-b border-gray-500 text-white px-[2.5rem] py-[2rem]'>
       <div className="flex justify-between items-center gap-7 text-xl">
-        <img src={go_logo} className='mr-[2rem]' alt=""/>
+        <img src={go_logo} className='w-[3.5rem] sm:w-[4rem] mr-[2rem]' alt=""/>
         <p className='hidden md:flex'>
             Home
         </p>
@@ -17,7 +17,7 @@ const NavBar = () => {
         </p>
       </div>
 
-      <div className="text-2xl">
+      <div className="text-lg sm:text-2xl">
         <p>Joydev Sarkar</p>
       </div>
     </div>

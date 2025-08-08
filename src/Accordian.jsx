@@ -30,8 +30,8 @@ const Accordian = () => {
   ]
 
   return (
-    <div className="w-full px-[3rem] py-[5rem] items-start bg-[#f5f5f5] flex gap-4 justify-center flex-wrap">
-      <div className="w-[30rem] flex flex-col items-start gap-4">
+    <div className="w-full px-[3rem] py-[5rem] items-start bg-[#f5f5f5] flex justify-center flex-wrap">
+      <div className="w-[30rem] flex justify-center items-center flex-col gap-4">
         {questions.map((question, index) => (
           <div
             key={index}
@@ -63,7 +63,7 @@ const Accordian = () => {
           </div>
         ))}
       </div>
-      <div className="w-[30rem] flex flex-col items-start gap-4">
+      <div className="w-[30rem] flex flex-col justify-center items-center gap-4">
         {questions_1.map((question, index) => (
           <div
             key={index}
@@ -85,7 +85,7 @@ const Accordian = () => {
             <p
               className={`${
                 openAcc === index ? "block" : "hidden"
-              } transition-all duration-300 ease-in-out text-[#999]`}
+              } transition-all duration-1000 ease-in-out text-[#999]`}
             >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
               quam odit voluptatum, rem libero modi labore porro commodi
@@ -100,7 +100,6 @@ const Accordian = () => {
 };
 
 export default Accordian;
-
 
 
 // <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 py-[3rem] lg:mx-[5rem] mx-[10rem]">

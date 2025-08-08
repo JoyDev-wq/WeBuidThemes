@@ -6,36 +6,38 @@ const Fifth = () => {
   return (
     <div>
       <hr />
-      <div className="px-[5rem] lg:px-[15rem] lg:py-[5rem] mt-[4rem]">
-        <div className="flex flex-col xl:flex-row justify-center gap-[2rem] items-center ">
+      <div className="px-[5rem] lg:px-[15rem] py-[5rem] mt-[4rem]">
+        <div className="flex flex-col lg:flex-row justify-center gap-[3rem] xl:gap-[1rem]  items-center ">
           <img
             className="w-[30rem] xl:w-[40rem] shadow-2xl"
             src={first}
             alt=""
           />
-          <div className="xl:ml-[6rem] flex flex-col gap-[1.5rem]">
-            <h1 className="text-[#54AF5D] text-xl font-semibold">VIDEO</h1>
-            <p className="text-5xl">Our Most Requested Tour</p>
-            <button className="w-[13rem] h-[4.5rem] bg-[#54AF5D] text-white  text-2xl rounded-full">
+          <div className="xl:ml-[4rem] flex flex-col gap-[2rem]">
+            <h1 className="text-center lg:text-left text-[#54AF5D] text-xl font-semibold">VIDEO</h1>
+            <p className="text-center lg:text-left text-3xl md:text-5xl">Our Most Requested Tour</p>
+            <div className=" flex justify-center items-center lg:justify-start">
+              <button className="w-[12rem] lg:w-[13rem] h-[3rem] lg:h-[4.5rem] bg-[#54AF5D] text-white text-xl lg:text-2xl rounded-full">
               Reserve Now
             </button>
+            </div>
           </div>
         </div>
       </div>
       <div
-        className="h-[35rem] w-full bg-cover bg-center"
+        className="h-[25rem] md:h-[30rem] w-full bg-cover bg-center"
         style={{
           backgroundImage: `url(${second})`,
         }}
       >
-        <div className="h-full w-full inert-0 bg-black/30 z-0">
+        <div className="h-full w-full inert-0 bg-black/35 z-0">
           <div className="h-full flex flex-col justify-center items-center gap-[1rem]">
-            <h3 className="text-[#e5e5e5] text-xl">MORE QUESTIONS?</h3>
-            <h1 className="px-[10%] lg:px-[30%] text-center text-6xl text-white
+            <h3 className="text-[#e5e5e5] text-lg md:text-xl">MORE QUESTIONS?</h3>
+            <h1 className="px-[10%] lg:px-[25%] text-center text-4xl md:text-6xl text-white
             mb-[2rem]">
               Ask our live support via chat or phone
             </h1>
-            <button className="px-[3.5rem] py-[1.5rem] bg-white text-2xl rounded-full">
+            <button className="px-[2.5rem] md:px-[3rem] py-[1rem] bg-white text-lg md:text-xl lg:text-2xl rounded-full">
               {" "}
               Get in Touch
             </button>
