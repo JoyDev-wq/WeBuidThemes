@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <div className='w-full bg-[#151515]'>
       <div className='mx-[5%] sm:mx-[10%] py-[5rem] xl:mx-[25rem] flex justify-between items-center'>
-        <h1 className='text-xl sm:text-2xl lg:text-4xl text-white'>Rue du Monte 47, 1000 <br /> Brussels, Belgium</h1>
+        <h1 className='text-lg sm:text-2xl lg:text-4xl text-white'>Rue du Monte 47, 1000 <br /> Brussels, Belgium</h1>
         <div className="">
-            <ul className='mt-[2rem] flex flex-col gap-2 text-xl sm:text-2xl text-right text-[#555]'>
+            <ul className='mt-[2rem] flex flex-col gap-2 text-lg sm:text-2xl text-right text-[#555]'>
                 <li className='font-semibold'>Facebook</li>
                 <li className='font-semibold'>Twitter</li>
                 <li className='font-semibold'>Instagram</li>
@@ -18,10 +18,10 @@ const Footer = () => {
       <hr className='border border-[#555]'/>
       <div className="mx-[10%] py-[5rem] xl:mx-[25rem] flex justify-between items-center">
         <div className="">
-            <img src={logo} alt="" />
+            <img className='w-[3rem] sm:w-[5rem]' src={logo} alt="" />
         </div>
         <div className=" text-[#555] text-lg sm:text-xl">
-            <p className=''>&copy; MADE WITH LOVE.</p>
+            <p className='text-[1rem]'>&copy; MADE WITH LOVE.</p>
         </div>
       </div >
     </div>

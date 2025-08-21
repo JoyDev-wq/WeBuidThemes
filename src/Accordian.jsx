@@ -30,15 +30,15 @@ const Accordian = () => {
   ]
 
   return (
-    <div className="w-full px-[3rem] py-[5rem] items-start bg-[#f5f5f5] flex justify-center flex-wrap">
-      <div className="w-[30rem] flex justify-center items-center flex-col gap-4">
+    <div className="w-full sm:px-[3rem] py-[5rem] items-start bg-[#ec0a0a] flex justify-center flex-wrap">
+      <div className="w-[20rem] sm:w-[30rem] flex justify-center items-center flex-col gap-4 mb-[1rem]">
         {questions.map((question, index) => (
           <div
             key={index}
-            className="w-[25rem] bg-white py-[1rem] px-[2rem] text-xl rounded-lg"
+            className="w-[20rem] bg-white py-[0.5rem] sm:py-[1rem] px-[1rem] sm:px-[2rem] text-xl rounded-lg "
           >
             <h1
-              className="flex justify-between mb-[1rem] cursor-pointer"
+              className="flex justify-between mb-[1rem] text-[1rem] sm:text-[1.5rem] cursor-pointer"
               onClick={() => toggleAccordion(index)}
             >
               {question}
@@ -53,7 +53,7 @@ const Accordian = () => {
             <p
               className={`${
                 openIndex === index ? "block" : "hidden"
-              } transition-all duration-300 ease-in-out text-[#999]`}
+              } transition-all duration-300 ease-in-out text-[#999] text-[1rem] `}
             >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
               quam odit voluptatum, rem libero modi labore porro commodi
@@ -63,14 +63,14 @@ const Accordian = () => {
           </div>
         ))}
       </div>
-      <div className="w-[30rem] flex flex-col justify-center items-center gap-4">
+      <div className="w-[20rem] sm:w-[30rem] flex flex-col justify-center items-center gap-4">
         {questions_1.map((question, index) => (
           <div
             key={index}
-            className="w-[25rem] bg-white py-[1rem] px-[2rem] text-xl rounded-lg"
+            className="w-[20rem] bg-white py-[0.5rem] sm:py-[1rem] px-[1rem] sm:px-[2rem] text-xl rounded-lg "
           >
             <h1
-              className="flex justify-between mb-[1rem] cursor-pointer"
+              className="flex justify-between text-[1rem] sm:text-[1.5rem] mb-[1rem] cursor-pointer"
               onClick={() => toggleAction(index)}
             >
               {question}
@@ -85,7 +85,7 @@ const Accordian = () => {
             <p
               className={`${
                 openAcc === index ? "block" : "hidden"
-              } transition-all duration-1000 ease-in-out text-[#999]`}
+              } transition-all duration-1000 ease-in-out text-[#999] text-[1rem]`}
             >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
               quam odit voluptatum, rem libero modi labore porro commodi
