@@ -30,7 +30,7 @@ const Accordian = () => {
   ]
 
   return (
-    <div className="w-full sm:px-[3rem] py-[5rem] items-start bg-[#ec0a0a] flex justify-center flex-wrap">
+    <div className="w-full sm:px-[3rem] py-[5rem] items-start flex justify-center flex-wrap">
       <div className="w-[20rem] sm:w-[30rem] flex justify-center items-center flex-col gap-4 mb-[1rem]">
         {questions.map((question, index) => (
           <div
