@@ -16,7 +16,6 @@ const Second = () => {
         start: "top bottom",   // when section top reaches 80% of viewport
         end: "bottom 60%",
         scrub: true,
-        markers:true
       },
     });
     t1.from(".heading",{
