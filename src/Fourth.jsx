@@ -8,7 +8,7 @@ import location from "./assets/location-svgrepo-com.svg";
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const Fourth = () => {
   // useEffect(() => {
